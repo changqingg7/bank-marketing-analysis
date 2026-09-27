@@ -32,7 +32,7 @@
 
 不同月份的转化率不同，但部分月份样本较少，且月份与营销安排、经济环境可能共同变化。因此，月份结果应作为活动排期的参考，而不能被解释为直接因果效应。
 
-![历史营销结果与订购率](../figures/exploratory/subscription_rate_by_poutcome.png)
+![历史营销结果与订购率](../figures/final/historical_outcome_conversion.png)
 
 ## 4 特征工程与数据划分
 
@@ -53,7 +53,7 @@
 
 随机森林的 ROC-AUC 与逻辑回归接近，但在更适合不平衡分类问题的 PR-AUC 与精准率上更优。因此，后续业务筛选采用随机森林评分。
 
-![模型 ROC 曲线](../figures/modeling/roc_curves.png)
+![模型 ROC 曲线](../figures/final/roc_curves.png)
 
 ## 6 模型解释
 
@@ -61,7 +61,7 @@
 
 宏观指标可帮助判断整体市场环境，但营销团队的直接行动应更多依赖既往营销结果、客户评分和联系策略。年龄、职业和教育程度适合用于辅助分层，应避免单独作为客户排除条件。特征重要性描述模型对历史数据的使用程度，不代表变量对订购行为的因果作用。
 
-![随机森林特征重要性](../figures/modeling/feature_importance.png)
+![随机森林特征重要性](../figures/final/feature_importance.png)
 
 ## 7 营销容量策略
 
@@ -76,7 +76,7 @@
 
 建议将“前 10%”作为资源紧张时的优先名单。它将实际转化率提升至基准水平的约 4.7 倍。若目标是提高潜在客户覆盖率，且团队可承担更多外呼量，可扩展至前 20%。最终比例应结合单次电话成本、单笔定期存款收益、合规要求和团队产能共同确定。
 
-![营销容量与转化率](../figures/modeling/capacity_strategy.png)
+![营销容量与转化率](../figures/final/capacity_strategy.png)
 
 ## 8 落地建议
 

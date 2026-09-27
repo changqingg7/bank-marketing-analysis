@@ -20,7 +20,9 @@ data/processed/
 # Generated charts and document artifacts
 figures/exploratory/
 figures/modeling/
-figures/final/
+# Keep a small, curated set of charts for the GitHub project page.
+figures/final/*
+!figures/final/*.png
 reports/**/*.pdf
 reports/**/*.pptx
 reports/ppt_build/
