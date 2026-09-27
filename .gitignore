@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environments and local settings
+.venv/
+venv/
+env/
+.env
+
+# Data files are reproducible from the documented source and notebooks
+data/raw/
+data/interim/
+data/processed/
+
+# Generated charts and document artifacts
+figures/exploratory/
+figures/modeling/
+figures/final/
+reports/**/*.pdf
+reports/**/*.pptx
+reports/ppt_build/
+.codex-finalizer/
+notebooks/figures/
+
+# OS files
+.DS_Store
+Thumbs.db
